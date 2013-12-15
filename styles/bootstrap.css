@@ -1,0 +1,19 @@
+nav {
+  z-index: 1000;
+}
+
+.navbar-header {
+  float: none !important;
+}
+
+.navbar-toggle {
+  display: block !important;
+}
+
+.tsld.btn-group {
+  margin-top: 14px;
+}
+
+.tsld.btn-group .btn:focus {
+    outline: none;
+}
