@@ -1,7 +1,7 @@
-components
-build
-node_modules
 .DS_Store
-tsld.js
-tsld.min.js
-tsld.css
+/components
+/build
+/node_modules
+/tsld.js
+/tsld.min.js
+/tsld.css
