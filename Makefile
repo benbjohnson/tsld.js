@@ -11,8 +11,8 @@ components: component.json
 	@component install --dev
 
 release: components scripts/*.js styles/*.css
-	$(COMPONENT) build --standalone tsld --out . --name tsld
-	$(UGLIFY) tsld.js --output tsld.min.js
+	$(COMPONENT) build --standalone tsld --out dist --name tsld
+	$(UGLIFY) dist/tsld.js --output dist/tsld.min.js
 
 test: lint build
 	$(PHANTOM) test/index.html
