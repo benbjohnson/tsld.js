@@ -15,6 +15,7 @@
   "license": "MIT",
   "main": "scripts/index.js",
   "scripts": [
+    "scripts/bbox.js",
     "scripts/layout.js",
     "scripts/index.js",
     "scripts/tsld.js"
