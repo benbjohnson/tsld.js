@@ -10,7 +10,7 @@ build: components scripts/*.js styles/*.css
 components: component.json
 	@component install --dev
 
-release: components scripts/*.js styles/*.css
+dist: components scripts/*.js styles/*.css
 	$(COMPONENT) build --standalone tsld --out dist --name tsld
 	$(UGLIFY) dist/tsld.js --output dist/tsld.min.js
 
@@ -23,4 +23,4 @@ lint:
 clean:
 	rm -fr build components template.js
 
-.PHONY: clean test release
+.PHONY: clean dist test release

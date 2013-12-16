@@ -99,8 +99,8 @@ Layout.prototype.invalidateTitle = function () {
         } else if (this.prevTitle !== "" && title === "") {
             // Fade title out.
             this.fadeOut($(this.titleContainer[0][0]), function () {
-                self.title.html(html);
-                self.title.style("display", "none");
+                self.titleContainer.html(html);
+                self.titleContainer.style("display", "none");
             });
         } else {
             // Update title.
