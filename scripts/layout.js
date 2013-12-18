@@ -6,6 +6,7 @@
 var PAD = 5;
 
 function Layout(selector) {
+    playback.Layout.call(this);
     this.selector = selector;
     this.prevTitle = this.prevSubtitle = "";
     this.padding = {
@@ -17,7 +18,7 @@ function Layout(selector) {
     this.containerClass = "container";
 }
 
-Layout.prototype = playback.layout();
+Layout.prototype = new playback.Layout();
 
 /**
  * Initializes the layout.
